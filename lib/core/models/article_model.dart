@@ -1,5 +1,5 @@
-import 'package:news/features/home/data/models/articles_model.dart';
-import 'package:news/features/home/domain/entites/article_entity.dart';
+import 'package:news/core/models/articles_model.dart';
+import 'package:news/core/entites/article_entity.dart';
 
 class ArticleModel {
   String? status;

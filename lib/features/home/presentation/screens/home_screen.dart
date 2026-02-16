@@ -8,6 +8,8 @@ import 'package:news/features/home/presentation/cubit/pages_cubit.dart';
 import 'package:news/features/home/presentation/widgets/home_page.dart';
 import 'package:news/features/home/presentation/widgets/my_drawer.dart';
 import 'package:news/features/home/presentation/widgets/news_page.dart';
+import 'package:news/features/search/presentation/cubit/get_articles_by_search_cubit.dart';
+import 'package:news/features/search/presentation/screens/search_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -35,7 +37,17 @@ class HomeScreen extends StatelessWidget {
           centerTitle: true,
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BlocProvider(
+                      create: (context) => GetArticlesBySearchCubit(),
+                      child: const SearchScreen(),
+                    ),
+                  ),
+                );
+              },
               icon: Icon(
                 Icons.search,
                 color: Theme.of(context).colorScheme.secondary,

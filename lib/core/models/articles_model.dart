@@ -1,6 +1,6 @@
 
 import 'package:news/features/home/data/models/source_model.dart';
-import 'package:news/features/home/domain/entites/articles_entity.dart';
+import 'package:news/core/entites/articles_entity.dart';
 
 class ArticlesModel {
   SourceModel? source;

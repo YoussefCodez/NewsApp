@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:news/features/core/const/app_const.dart';
-import 'package:news/features/core/services/api_manager.dart';
+import 'package:news/core/const/app_const.dart';
+import 'package:news/core/services/api/api_manager.dart';
 import 'package:news/features/home/data/models/source_model.dart';
 import 'package:news/features/home/domain/entites/sources_entity.dart';
 import 'package:news/features/home/domain/repositories/get_source_repo.dart';

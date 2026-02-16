@@ -1,4 +1,4 @@
-import 'package:news/features/home/domain/entites/articles_entity.dart';
+import 'package:news/core/entites/articles_entity.dart';
 
 class ArticleEntity {
   String? status;

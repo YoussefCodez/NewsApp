@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
-import 'package:news/features/home/domain/entites/articles_entity.dart';
+import 'package:news/core/entites/articles_entity.dart';
 import 'package:news/features/home/presentation/cubit/get_articles_cubit.dart';
-import 'package:news/features/home/presentation/widgets/article_widget.dart';
+import 'package:news/core/widgets/article_widget.dart';
 
 class ArticleList extends StatefulWidget {
   const ArticleList({super.key, required this.sourceId});

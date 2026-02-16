@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news/features/core/theme/app_colors.dart';
+import 'package:news/core/theme/app_colors.dart';
 import 'package:news/features/home/presentation/cubit/category_cubit.dart';
 import 'package:news/features/home/presentation/cubit/pages_cubit.dart';
 

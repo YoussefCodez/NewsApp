@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:news/features/home/data/repositories/get_articles_impl.dart';
-import 'package:news/features/home/domain/entites/articles_entity.dart';
+import 'package:news/core/entites/articles_entity.dart';
 import 'package:news/features/home/domain/use_cases/get_articles_use_case.dart';
 
 part 'get_articles_state.dart';

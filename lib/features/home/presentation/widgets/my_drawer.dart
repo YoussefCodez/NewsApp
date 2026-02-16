@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:news/features/home/presentation/cubit/pages_cubit.dart';
+import 'package:news/core/theme/cubit/theme_cubit.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -50,7 +51,11 @@ class MyDrawer extends StatelessWidget {
                 DrawerRow(
                   svg: "theme.svg",
                   text: "Theme",
-                  initialSelection: "light",
+                  initialSelection:
+                      context.watch<ThemeCubit>().state.themeMode ==
+                          ThemeMode.dark
+                      ? "dark"
+                      : "light",
                   entries: const [
                     DropdownMenuEntry(
                       value: "light",
@@ -74,7 +79,9 @@ class MyDrawer extends StatelessWidget {
                     ),
                   ],
                   onSelected: (value) {
-                    // TODO: Implement theme switching
+                    if (value != null) {
+                      context.read<ThemeCubit>().changeTheme(value);
+                    }
                   },
                 ),
                 Gap(24.h),

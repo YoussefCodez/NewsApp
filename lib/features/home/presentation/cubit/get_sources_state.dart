@@ -8,7 +8,7 @@ final class GetSourcesInitial extends GetSourcesState {}
 final class GetSourcesLoading extends GetSourcesState {}
 
 final class GetSourcesSuccess extends GetSourcesState {
-  List<SourcesEntity> sources;
+  final List<SourcesEntity> sources;
   GetSourcesSuccess(this.sources);
   
   
@@ -16,7 +16,7 @@ final class GetSourcesSuccess extends GetSourcesState {
 }
 
 final class GetSourcesError extends GetSourcesState {
-  String error;
+  final String error;
   GetSourcesError(this.error);
 
   List<Object?> get props => [error];

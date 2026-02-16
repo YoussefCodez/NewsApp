@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:news/features/home/domain/entites/articles_entity.dart';
+import 'package:news/core/entites/articles_entity.dart';
 import 'package:news/features/home/domain/repositories/get_articles_repo.dart';
 
 class GetArticlesUseCase {
