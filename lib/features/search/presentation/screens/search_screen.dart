@@ -99,8 +99,9 @@ class _SearchScreenState extends State<SearchScreen> {
               if (value.isNotEmpty) {
                 if (_debounce?.isActive ?? false) _debounce!.cancel();
                 _debounce = Timer(const Duration(milliseconds: 500), () {
-                  context.read<GetArticlesBySearchCubit>()
-                      .getArticlesBySearch(value);
+                  context.read<GetArticlesBySearchCubit>().getArticlesBySearch(
+                    value,
+                  );
                 });
               } else {
                 context.read<GetArticlesBySearchCubit>().getArticlesBySearch(

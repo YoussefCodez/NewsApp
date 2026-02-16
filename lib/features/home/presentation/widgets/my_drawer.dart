@@ -84,39 +84,6 @@ class MyDrawer extends StatelessWidget {
                     }
                   },
                 ),
-                Gap(24.h),
-                const Divider(color: Colors.white, thickness: 1),
-                Gap(24.h),
-                DrawerRow(
-                  svg: "lang.svg",
-                  text: "Language",
-                  initialSelection: "en",
-                  entries: const [
-                    DropdownMenuEntry(
-                      value: "en",
-                      label: "English",
-                      style: ButtonStyle(
-                        textStyle: WidgetStatePropertyAll(
-                          TextStyle(color: Colors.white),
-                        ),
-                        foregroundColor: WidgetStatePropertyAll(Colors.white),
-                      ),
-                    ),
-                    DropdownMenuEntry(
-                      value: "ar",
-                      label: "Arabic",
-                      style: ButtonStyle(
-                        textStyle: WidgetStatePropertyAll(
-                          TextStyle(color: Colors.white),
-                        ),
-                        foregroundColor: WidgetStatePropertyAll(Colors.white),
-                      ),
-                    ),
-                  ],
-                  onSelected: (value) {
-                    // TODO: Implement language switching
-                  },
-                ),
               ],
             ),
           ),

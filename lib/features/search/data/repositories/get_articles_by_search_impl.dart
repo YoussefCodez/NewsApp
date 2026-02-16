@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:news/core/const/app_const.dart';
 import 'package:news/core/entites/articles_entity.dart';
 import 'package:news/core/models/article_model.dart';
 import 'package:news/core/services/api/api_manager.dart';
@@ -11,7 +12,11 @@ class GetArticlesBySearchImpl implements GetArticlesBySearchRepo {
   ) async {
     try {
       var response = await ApiManager.dio.get(
-        '/v2/everything?q=$keyword&apiKey=5803693e53a94c9eb4a8e8cbb81b0dcc',
+        '/v2/everything',
+        queryParameters: {
+          'q': keyword,
+          'apiKey': AppConst.apiKey,
+        },
       );
       return Right(ArticleModel.fromJson(response.data).toEntity().articles!);
     } catch (e) {
