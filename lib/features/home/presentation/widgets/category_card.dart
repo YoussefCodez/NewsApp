@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news/core/theme/app_colors.dart';
 import 'package:news/features/home/presentation/cubit/category_cubit.dart';
 import 'package:news/features/home/presentation/cubit/pages_cubit.dart';
 
@@ -64,7 +63,7 @@ class CategoryCard extends StatelessWidget {
                             bottom: 10.h,
                           ),
                           decoration: BoxDecoration(
-                            color: AppColors.gray,
+                            color: Theme.of(context).colorScheme.secondaryContainer,
                             borderRadius: BorderRadius.circular(30.r),
                           ),
                           child: Text(
@@ -72,7 +71,7 @@ class CategoryCard extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 20.sp,
                               fontWeight: .w500,
-                              color: Theme.of(context).colorScheme.secondary,
+                              color: Colors.black,
                             ),
                           ),
                         ),

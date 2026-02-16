@@ -7,6 +7,7 @@ class AppTheme {
     colorScheme: ColorScheme.light(
       primary: AppColors.secondaryColor,
       secondary: AppColors.primaryColor,
+      secondaryContainer: AppColors.grayLight,
     ),
   );
   static ThemeData get darkTheme => ThemeData(
@@ -14,6 +15,7 @@ class AppTheme {
     colorScheme: ColorScheme.dark(
       primary: AppColors.primaryColor,
       secondary: AppColors.secondaryColor,
+      secondaryContainer: AppColors.grayDark,
     ),
   );
 }
